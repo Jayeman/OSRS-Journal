@@ -1,0 +1,18 @@
+start with an empty board
+you can add a board and move it around the screen and resize it to whatever you want
+you can have multiple boards but they cant overlap
+
+
+you have a tool bar on the left which you can use to create things such as:
+
+add board which adds a whole board for you to create the below features on:
+- checklists (that cross off when you click it)
+- text box with heading and font options
+- buttons where you can set up links to certain pages easily
+- tables for storing relevant data
+- archive to remove things off your board and save it off the board
+- delete to remove these items
+
+each one of these items snap to a grid for neat organisation
+
+this will then need to be stored into a database for easy closing and reopening of the page

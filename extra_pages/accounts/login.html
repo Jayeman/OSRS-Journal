@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="SEO" content="Rupes, Made in Italy, Liquor, Alcohol">
+    <meta name="Description" content="Shopping, Rupes, Liquor">
+    <meta name="Author" content="Joshua Aitken">
+    <title>Template</title>
+    <link rel="icon" type="image/x-icon" href="">
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <nav class="navigation">
+        <!-- Logo positioned on the top right -->
+        <a href="../../index.html" class="logo">
+            <img src="/media/Icons/LOGO.png" alt="Logo">
+        </a>
+        <ul>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="premium.html">Premium</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+
+        <div class="icon-container">
+            <img class="accounts_icon" src="/media/Icons/accounts_icon.png" alt="User Icon">
+            <div class="dropdown-box">
+                <button onclick="window.location.href='/extra_pages/accounts/login.html'">Login</button>
+                <button onclick="window.location.href='/extra_pages/accounts/create.html'">Register</button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="main">
+        <div class="login-container">
+            <h1>Login</h1>
+            <form action="http://localhost:5500/login" method="POST">
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <input type="password" name="password" placeholder="Enter your password" required>
+                <button type="submit">Login</button>
+                <!-- <a href="create.html">Create an account</a> Link to create account page-->
+            </form>
+            <p id="errorMessage" style="color: red; display: none;">Invalid email or password. Please try again.</p>
+        </div>
+        <script src="login.js"></script>
+        
+    </section>
+
+    <footer class="social_container">
+        <img src="/media/Icons/facebook-96.svg" alt="Facebook Icon">
+        <img src="/media/Icons/instagram-96.svg" alt="Instagram Icon">
+        <img src="/media/Icons/linked-in-96.svg" alt="LinkedIn Icon">
+    </footer>
+</body>
+</html>

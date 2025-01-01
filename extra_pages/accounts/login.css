@@ -1,0 +1,210 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Bebas+Neue&display=swap');
+
+/* Full-page background image */
+html, body {
+    height: 100%; /* Full height for both the HTML and body */
+    margin: 0;
+    padding: 0;
+    background-image: url("/media/Background_images/Background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+}
+
+/* Remove scroll */
+body {
+    overflow: hidden; /* Disable scrolling */
+}
+
+/* Navbar */
+.navigation {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    min-height: 70px; /* Set a height for the navbar */
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between; /* Distribute space between items */
+    align-items: center;
+}
+
+/* Logo positioned in the top right */
+.navigation .logo {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    max-width: 250px;
+}
+
+.navigation .logo img {
+    max-width: 250px;
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: center; /* Center the menu items */
+    margin: 0;
+    padding: 0;
+    flex: 1; /* Allow the list to take up remaining space */
+    list-style-type: none;
+}
+
+.navigation li {
+    margin: 0 20px;
+}
+
+.navigation li a {
+    font-size: 50px; /* Adjusted size */
+    color: #D4AF37;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover effect */
+.navigation li a:hover {
+    background-color: #444;
+    color: yellow;
+}
+
+/* Account icon container styles */
+.icon-container {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* Account icon image styles */
+.accounts_icon {
+    padding: 20px;
+    width: 80px;
+    height: 80px;
+}
+
+/* Dropdown box hidden by default */
+.dropdown-box {
+    display: none;
+    position: absolute;
+    top: 120px; /* Adjust position of dropdown */
+    right: 20px;
+    background-color: black;
+    border: 2px solid #D4AF37;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    padding: 10px;
+    min-width: 150px;
+}
+
+/* Dropdown buttons */
+.dropdown-box button {
+    display: block;
+    width: 100%;
+    padding: 10px 40px;
+    background-color: #D4AF37;
+    border: none;
+    color: black;
+    font-size: 20px; /* Adjust button size */
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for dropdown buttons */
+.dropdown-box button:hover {
+    background-color: yellow;
+}
+
+/* Show dropdown on hover */
+.icon-container:hover .dropdown-box {
+    display: block;
+}
+
+
+
+/*-----------------MAIN--------------------*/
+.main {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px); /* Adjust based on nav/footer height */
+}
+
+.login-container {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+    min-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+input {
+    display: block;
+    width: 95%;
+    height: 40px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 40px;
+}
+
+button {
+    background-color: #D4AF37;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #c08d2d;
+}
+
+
+
+
+
+
+/* Footer */
+.social_container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px;
+    background-color: #333;
+    width: 100%;
+    position: absolute;
+    bottom: 0; /* Stick to the bottom of the page */
+}
+
+/* Footer social icons */
+.social_container img {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s;
+}
+
+/* Hover effect on footer icons */
+.social_container img:hover {
+    transform: scale(1.2);
+}

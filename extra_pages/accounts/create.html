@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="SEO" content="Rupes, Made in Italy, Liquor, Alcohol">
+    <meta name="Description" content="Shopping, Rupes, Liquor">
+    <meta name="Author" content="Joshua Aitken">
+    <title>Create Account</title>
+    <link rel="icon" type="image/x-icon" href="">
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <nav class="navigation">
+        <a href="../../index.html" class="logo">
+            <img src="/media/Icons/LOGO.png" alt="Logo">
+        </a>
+        <ul>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="premium.html">Premium</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+        <div class="icon-container">
+            <img class="accounts_icon" src="/media/Icons/accounts_icon.png" alt="User Icon">
+            <div class="dropdown-box">
+                <button onclick="window.location.href='/extra_pages/accounts/login.html'">Login</button>
+                <button onclick="window.location.href='/extra_pages/accounts/create.html'">Register</button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="main">
+        <div class="login-container">
+            <h1>Create Account</h1>
+            <form action="/create-account" method="POST">
+                <input type="text" name="first_name" placeholder="First Name" required>
+                <input type="text" name="last_name" placeholder="Last Name" required>
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <input type="email" name="confirm_email" placeholder="Confirm your email" required>
+                <input type="password" name="password" placeholder="Enter your password" required>
+                <input type="password" name="confirm_password" placeholder="Confirm your password" required>
+                <button type="submit">Create Account</button>
+            </form>
+            <p id="errorMessage" style="color: red; display: none;">Error message will show here.</p>
+        </div>
+    </section>
+
+    <footer class="social_container">
+        <img src="/media/Icons/facebook-96.svg" alt="Facebook Icon">
+        <img src="/media/Icons/instagram-96.svg" alt="Instagram Icon">
+        <img src="/media/Icons/linked-in-96.svg" alt="LinkedIn Icon">
+        <p>Hello there</p>
+    </footer>
+
+</body>
+</html>

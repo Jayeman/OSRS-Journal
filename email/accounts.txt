@@ -1,0 +1,15 @@
+EMAIL = joshuamartin.52@outlook.com
+PASSWORD = Codingmaster2024?
+RECOVERY CODE = 4K5N1XTJPDG4F5DMH25L5WYF
+
+SENDER IDENTITY
+
+
+IONOS - domain and email provider
+EMAIL = joshuamartin.52@outlook.com
+PASSWORD = Superelephantcake678
+
+Mail Basic Email Address on IONOS
+EMAIL = customerservices@osrsjournal.co.uk
+PASSWORD = Deltacharliekiller395
+
